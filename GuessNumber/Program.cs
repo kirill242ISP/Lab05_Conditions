@@ -234,24 +234,76 @@
 //     Console.WriteLine("Доступ не разрешен");
 // }
 //задание 3
-Console.WriteLine("введите первое число:");
-int num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("введите второе число:");
-int num2 = int.Parse(Console.ReadLine());
-Console.WriteLine("введите операцию:");
-string op = Console.ReadLine();
-switch (op)
+// Console.WriteLine("введите первое число:");
+// int num1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("введите второе число:");
+// int num2 = int.Parse(Console.ReadLine());
+// Console.WriteLine("введите операцию:");
+// string op = Console.ReadLine();
+// switch (op)
+// {
+//     case "+":
+//         Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+//         break;
+//     case "-":
+//         Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+//         break;
+//         case "*":
+//         Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+//         break;
+//         case "/":
+//         Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+//         break;
+// }
+// задание 4
+// Console.WriteLine("введите первое число:");
+// int ch1 = int.Parse(Console.ReadLine());
+// Console.WriteLine("введите второе число:");
+// int ch2 = int.Parse(Console.ReadLine());
+// Console.WriteLine("введите третье число:");
+// int ch3 = int.Parse(Console.ReadLine());
+// int summ = 0;
+// if (ch1 > 0)
+// {
+//     summ += ch1;
+// }
+// if (ch2 > 0)
+// {
+//     summ += ch2;
+// }
+// if (ch3 > 0)
+// {
+//     summ += ch3;
+// }
+// Console.WriteLine($"сумма: {summ}");
+//задание 5
+Console.WriteLine("Вы — отважный искатель приключений, отправившийся в Темный Лабиринт, чтобы найти легендарного Dungeon Master’а. Вам предстоит пройти черезнесколько комнат, каждая из которых может иметь свои опасности и сокровища.");
+Console.WriteLine("Вы стоите перед первой дверью. Перед вами два пути\n Путь А: Войти в комнату с огромным драконом.\nПуть B: Пойти по тёмному коридору.\nвыберите путь");
+string way = Console.ReadLine();
+switch (way)
 {
-    case "+":
-        Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+    case "A":
+        Console.WriteLine("Вам нужно будет ответить на загадку дракона:\n Дракон говорит: 'Кто не дышит, но живёт; хоть не нужно — много пьёт; и в жизни, и в смерти тело как лёд.'");
+        string answer = Console.ReadLine();
+        if (answer == "fish")
+        {
+            Console.WriteLine("Дракон открывает вам дверь");
+        }
+        else
+        {
+            Console.WriteLine("дракон вас съел");
+        }
         break;
-    case "-":
-        Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
-        break;
-        case "*":
-        Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
-        break;
-        case "/":
-        Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+    case "B":
+        Console.WriteLine("Вас ждёт тёмная комната с двумя дверями:\n Дверь 1: За ней скрыты сокровища Dungeon Master’а.\n Дверь 2: За ней — ловушка с ядовитыми шипами.\n выберете дверь:");
+        string otv = Console.ReadLine();
+        if (otv == "1")
+        {
+            Console.WriteLine("вы получили сокровища голда");
+        }
+        if (otv == "2")
+        {
+            Console.WriteLine("вы попали в ловушку");
+        }
         break;
 }
