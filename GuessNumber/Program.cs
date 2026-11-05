@@ -208,8 +208,6 @@
 // }
 //  //самостоятельные задания
 //  //задание 1
-// using System.Runtime.CompilerServices;
-
 // Console.WriteLine("Введите пароль:");
 // string password = Console.ReadLine();
 // Console.WriteLine("Подтвердите пароль:");
@@ -224,7 +222,7 @@
 // }
 //задание 2
 // Console.WriteLine("Введите возраст:");
-// int vozrast = int.Parse(Console.ReadLine());
+// int vozrast = int.chislo(Console.ReadLine());
 // if (vozrast >= 18)
 // {
 //     Console.WriteLine("Доступ разрешен");
@@ -235,9 +233,9 @@
 // }
 //задание 3
 // Console.WriteLine("введите первое число:");
-// int num1 = int.Parse(Console.ReadLine());
+// int num1 = int.chislo(Console.ReadLine());
 // Console.WriteLine("введите второе число:");
-// int num2 = int.Parse(Console.ReadLine());
+// int num2 = int.chislo(Console.ReadLine());
 // Console.WriteLine("введите операцию:");
 // string op = Console.ReadLine();
 // switch (op)
@@ -257,11 +255,11 @@
 // }
 // задание 4
 // Console.WriteLine("введите первое число:");
-// int ch1 = int.Parse(Console.ReadLine());
+// int ch1 = int.chislo(Console.ReadLine());
 // Console.WriteLine("введите второе число:");
-// int ch2 = int.Parse(Console.ReadLine());
+// int ch2 = int.chislo(Console.ReadLine());
 // Console.WriteLine("введите третье число:");
-// int ch3 = int.Parse(Console.ReadLine());
+// int ch3 = int.chislo(Console.ReadLine());
 // int summ = 0;
 // if (ch1 > 0)
 // {
